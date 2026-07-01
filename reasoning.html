@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reasoning — RRB CBT 1 Exam Questions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="brand-icon"><i class="fas fa-train"></i></div>
+                RRB CBT 1 Exam Questions
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="navbar-nav gap-1">
+                    <a class="nav-link-custom" href="mathematics.html"><i
+                            class="fas fa-square-root-alt me-1"></i>Mathematics</a>
+                    <a class="nav-link-custom active" href="reasoning.html"><i
+                            class="fas fa-brain me-1"></i>Reasoning</a>
+                    <a class="nav-link-custom" href="science.html"><i class="fas fa-flask me-1"></i>General Science</a>
+                    <a class="nav-link-custom" href="affairs.html"><i class="fas fa-newspaper me-1"></i>Current
+                        Affairs</a>
+                    <a class="nav-link-custom test-link" href="test.html"><i
+                            class="fas fa-clipboard-check me-1"></i>Test Practice</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container py-2" id="mainContent">
+        <div id="section-reasoning" class="content-section">
+            <div class="section-header">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                    <div class="section-title">
+                        <div class="section-icon" style="background:#ede9fe;color:#5b21b6"><i class="fas fa-brain"></i>
+                        </div>
+                        Reasoning
+                    </div>
+                    <span class="section-count">40 Questions</span>
+                </div>
+            </div>
+            <div id="reasoning-questions"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <strong style="color:#fff">RRB CBT 1 Exam Preparation</strong> &nbsp;|&nbsp;
+            160 Questions &nbsp;·&nbsp; 75-Question Mock Test &nbsp;·&nbsp; Detailed Solutions<br>
+            <small>For educational purposes only · <span>2026 RRB CBT 1 Preparation</span></small>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="data-reasoning.js"></script>
+    <script src="common.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderQuestions(reasoningQuestions, 'reasoning-questions', 'tag-reasoning', 'Reasoning');
+        });
+    </script>
+</body>
+
+</html>
